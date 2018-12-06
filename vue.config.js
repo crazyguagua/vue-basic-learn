@@ -9,7 +9,7 @@ module.exports={
   chainWebpack:config=>{
     config.resolve.
       alias.set('@',resolve('src')) // 配置目录别名
-      .set('_c',resolve('components')) //组件目录别名
+      .set('_c',resolve('src/components')) //组件目录别名
   },
   //打包时 不生成.map文件
   productionSourceMap:false,

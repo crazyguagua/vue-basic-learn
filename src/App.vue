@@ -5,6 +5,10 @@
         <router-link to="/demo1" class="nav"> 跑马灯</router-link>
 
         <router-link to="/demo2" class="nav"> 事件</router-link>
+        <router-link to="/demo3" class="nav"> 双向绑定</router-link>
+        <router-link to="/calculator" class="nav">计算器</router-link>
+        <router-link to="/demo4" class="nav">样式绑定</router-link>
+        <router-link to="/demo5" class="nav">v-for遍历</router-link>
       </div>
     
     <router-view></router-view>
