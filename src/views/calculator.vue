@@ -1,6 +1,7 @@
 <template>
     <div class="container">
         <Calculator />
+        <Calculator />
     </div>
 </template>
 

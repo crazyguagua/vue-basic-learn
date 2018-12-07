@@ -139,7 +139,8 @@
 
         .result {
             padding-top: 20px;
-            height: 60px;
+            height: 80px;
+            line-height: 60px;
             line-height: 60px;
             font-size: 50px;
             color: #fff;
@@ -155,6 +156,7 @@
             td {
                 border-right: 1px solid #333;
                 border-bottom: 1px solid #333;
+                border-top:none;
                 background: #626162;
                 text-align: center;
                 padding: 10px;

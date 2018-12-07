@@ -26,5 +26,10 @@ const routers =[
         path:'/demo5',
         component:()=>import('@/views/vFor')
     }
+    ,{
+        name:'table',
+        path:'/table',
+        component:()=>import('@/views/table')
+    }
 ]
 export default routers
