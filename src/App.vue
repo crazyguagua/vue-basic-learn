@@ -1,18 +1,8 @@
 <template>
   <div id="app">
-      <h2>导航</h2>
-      <div class="navi-wrapper">
-        <router-link to="/demo1" class="navi"> 跑马灯</router-link>
-
-        <router-link to="/demo2" class="navi"> 事件</router-link>
-        <router-link to="/demo3" class="navi"> 双向绑定</router-link>
-        <router-link to="/calculator" class="navi">计算器</router-link>
-        <router-link to="/demo4" class="navi">样式绑定</router-link>
-        <router-link to="/demo5" class="navi">v-for遍历</router-link>
-        <router-link to="/table" class="navi">综合案例</router-link>
-      </div>
-    
+    <transition mode="out-in">
     <router-view></router-view>
+    </transition>
   </div>
 </template>
 
@@ -31,7 +21,6 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
-  margin-top: 60px;
 }
 .navi-wrapper{
   margin-bottom: 20px;
@@ -44,5 +33,12 @@ export default {
 }
 .navi.router-link-active{
   color:rgb(230, 102, 52);
+}
+.v-enter,.v-leave-to{
+  opacity: 0;
+  /* transform:translateX(100%); */
+}
+.v-enter-active,.v-leave-active{
+  transition:all .3s;
 }
 </style>
